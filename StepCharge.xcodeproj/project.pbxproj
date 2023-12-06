@@ -11,6 +11,8 @@
 		2171D1C72B20CB52007D3E6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171D1C62B20CB52007D3E6E /* ContentView.swift */; };
 		2171D1C92B20CB53007D3E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2171D1C82B20CB53007D3E6E /* Assets.xcassets */; };
 		2171D1CC2B20CB53007D3E6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2171D1CB2B20CB53007D3E6E /* Preview Assets.xcassets */; };
+		2171D1D42B20CFCC007D3E6E /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171D1D32B20CFCC007D3E6E /* HealthKitManager.swift */; };
+		2171D1D62B20DAF4007D3E6E /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171D1D52B20DAF4007D3E6E /* HealthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		2171D1C62B20CB52007D3E6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2171D1C82B20CB53007D3E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2171D1CB2B20CB53007D3E6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2171D1D22B20CE5C007D3E6E /* StepCharge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StepCharge.entitlements; sourceTree = "<group>"; };
+		2171D1D32B20CFCC007D3E6E /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		2171D1D52B20DAF4007D3E6E /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +56,10 @@
 		2171D1C32B20CB52007D3E6E /* StepCharge */ = {
 			isa = PBXGroup;
 			children = (
+				2171D1D22B20CE5C007D3E6E /* StepCharge.entitlements */,
 				2171D1C42B20CB52007D3E6E /* StepChargeApp.swift */,
+				2171D1D32B20CFCC007D3E6E /* HealthKitManager.swift */,
+				2171D1D52B20DAF4007D3E6E /* HealthView.swift */,
 				2171D1C62B20CB52007D3E6E /* ContentView.swift */,
 				2171D1C82B20CB53007D3E6E /* Assets.xcassets */,
 				2171D1CA2B20CB53007D3E6E /* Preview Content */,
@@ -137,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2171D1D62B20DAF4007D3E6E /* HealthView.swift in Sources */,
 				2171D1C72B20CB52007D3E6E /* ContentView.swift in Sources */,
 				2171D1C52B20CB52007D3E6E /* StepChargeApp.swift in Sources */,
+				2171D1D42B20CFCC007D3E6E /* HealthKitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +279,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StepCharge/StepCharge.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StepCharge/Preview Content\"";
@@ -298,6 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StepCharge/StepCharge.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StepCharge/Preview Content\"";
